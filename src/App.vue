@@ -49,7 +49,7 @@ created() {
 },
 provide(){
   return {
-    words: JSON.parse(localStorage.words)
+    words: JSON.parse(localStorage.words) || null
   }
 },
 methods: {
