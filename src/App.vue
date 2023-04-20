@@ -41,7 +41,7 @@ data() {
     langwords: {}
   }
 },
-created() {
+mounted() {
   localStorage.lang = localStorage.lang || 'ru'
   this.lang = localStorage.lang || 'ru'
   this.langwords = langs
